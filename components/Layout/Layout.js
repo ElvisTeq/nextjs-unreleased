@@ -4,10 +4,10 @@ import Footer from "./Footer";
 
 function Layout(props) {
   return (
-    <div>
+    <div className={classes.main}>
       <Header />
-      <main className={classes.main}>{props.children}</main>
-      <Footer />
+      <main className={classes.body}>{props.children}</main>
+      <Footer className={classes.footer} />
     </div>
   );
 }

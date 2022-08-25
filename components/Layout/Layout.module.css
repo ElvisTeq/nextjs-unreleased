@@ -1,6 +1,16 @@
-.main {
+.body {
   margin: 3rem auto;
   width: 100%;
   padding: 0 25%;
   min-height: 50vh;
+  min-height: 75vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  margin-top: auto;
 }
