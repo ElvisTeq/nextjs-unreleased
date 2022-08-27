@@ -62,16 +62,6 @@ const Footer = () => {
           <MDBBtn
             floating
             className="m-1"
-            style={{ backgroundColor: "#3b5998" }}
-            href="#!"
-            role="button"
-          >
-            <MDBIcon fab icon="facebook-f" />
-          </MDBBtn>
-
-          <MDBBtn
-            floating
-            className="m-1"
             style={{ backgroundColor: "#55acee" }}
             href="#!"
             role="button"

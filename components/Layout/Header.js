@@ -21,21 +21,18 @@ const Header = () => {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              <Nav.Link href="#action1">Home</Nav.Link>
-              <Nav.Link href="#action2">Link</Nav.Link>
-              <NavDropdown title="Link" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
-                  Another action
-                </NavDropdown.Item>
+              <Nav.Link href="#action1">About</Nav.Link>
+              <Nav.Link href="#action2">Subscribe</Nav.Link>
+              <NavDropdown title="Platforms" id="navbarScrollingDropdown">
+                <NavDropdown.Item href="#action3">Nintendo</NavDropdown.Item>
+                <NavDropdown.Item href="#action4">PlayStation</NavDropdown.Item>
+                <NavDropdown.Item href="#action5">XBox</NavDropdown.Item>
+                <NavDropdown.Item href="#action6">PC</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  Something else here
+                <NavDropdown.Item href="#action7">
+                  All Platforms
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#" disabled>
-                Link
-              </Nav.Link>
             </Nav>
             <Form className="d-flex">
               <Form.Control
