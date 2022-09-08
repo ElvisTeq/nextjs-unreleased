@@ -23,13 +23,15 @@ const Header = () => {
             >
               <Nav.Link href="#action1">About</Nav.Link>
               <Nav.Link href="#action2">Subscribe</Nav.Link>
+              <Nav.Link href="#action3">Merch</Nav.Link>
+              <Nav.Link href="#action4">News</Nav.Link>
               <NavDropdown title="Platforms" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">Nintendo</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">PlayStation</NavDropdown.Item>
-                <NavDropdown.Item href="#action5">XBox</NavDropdown.Item>
-                <NavDropdown.Item href="#action6">PC</NavDropdown.Item>
+                <NavDropdown.Item href="#action5">Nintendo</NavDropdown.Item>
+                <NavDropdown.Item href="#action6">PlayStation</NavDropdown.Item>
+                <NavDropdown.Item href="#action7">XBox</NavDropdown.Item>
+                <NavDropdown.Item href="#action8">PC</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action7">
+                <NavDropdown.Item href="#action9">
                   All Platforms
                 </NavDropdown.Item>
               </NavDropdown>
