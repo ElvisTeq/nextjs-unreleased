@@ -1,12 +1,28 @@
+// Cards Using Bootstrap
+
 import { Fragment } from "react";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import classes from "./GameCards.module.css";
 
 const GameCards = (props) => {
+  // Getting games data
   const games = [];
   Object.keys(props).forEach(function (prop) {
     games.push(...props[prop]);
+  });
+
+  // Uppercasing games names/dates
+  const toUpperCase = (str) => {
+    return str.replace(/\w\S*/g, function (txt) {
+      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    });
+  };
+
+  games.map((game) => {
+    game.name = toUpperCase(game.name);
+    game.releaseDate = toUpperCase(game.releaseDate);
+    game.platform = toUpperCase(game.platform);
   });
 
   return (
@@ -21,7 +37,7 @@ const GameCards = (props) => {
                 color: "white",
               }}
             >
-              <a href={game.url}>
+              <a href={game.url} rel="noopener noreferrer" target="_blank">
                 <Card.Img
                   variant="top"
                   src={game.img}
@@ -46,7 +62,7 @@ const GameCards = (props) => {
                 <ListGroup.Item
                   style={{ background: "transparent", color: "white" }}
                 >
-                  {game.platform[0].toUpperCase() + game.platform.slice(1)}
+                  {game.platform}
                 </ListGroup.Item>
               </ListGroup>
               <Card.Body>

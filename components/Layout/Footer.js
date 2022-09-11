@@ -1,12 +1,6 @@
-// import {
-//   MDBFooter,
-//   MDBContainer,
-//   MDBCol,
-//   MDBRow,
-//   MDBIcon,
-//   MDBBtn,
-// } from "mdb-react-ui-kit";
+// Footer using MDB
 
+import Link from "next/link";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import dynamic from "next/dynamic";
@@ -115,9 +109,9 @@ const Footer = () => {
         style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
       >
         Unreleased | All right reserved | Terms Of Service | Privacy |
-        <a className="text-white" href="#">
+        <Link className="text-white" href="/">
           {` Unreleased.com`}
-        </a>
+        </Link>
       </div>
     </MDBFooter>
   );

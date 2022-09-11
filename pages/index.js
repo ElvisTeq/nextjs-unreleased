@@ -7,8 +7,8 @@ import styles from "../styles/Home.module.css";
 const DUMMY_DATA = [
   {
     id: "g1",
-    name: "Pokemon Violet",
-    releaseDate: "November 18, 2022",
+    name: "pokemon violet",
+    releaseDate: "november 18, 2022",
     price: 59.99,
     platform: "nintendo",
     url: "https://www.nintendo.com/store/products/pokemon-violet-switch/",

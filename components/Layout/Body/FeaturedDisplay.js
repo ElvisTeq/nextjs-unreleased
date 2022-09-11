@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import Image from "next/image";
-import Carousel from "react-bootstrap/Carousel";
+// Carousel Using Bootstrap
 
+import React, { useState } from "react";
+import Carousel from "react-bootstrap/Carousel";
 import classes from "./FeaturedDisplay.module.css";
 
 const FeaturedDisplay = () => {

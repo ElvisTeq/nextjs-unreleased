@@ -1,3 +1,5 @@
+// Header using Bootstrap
+
 import {
   Navbar,
   Container,
@@ -21,9 +23,8 @@ const Header = () => {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              <Nav.Link href="/about">About</Nav.Link>
               <Nav.Link href="/subscribe">Subscribe</Nav.Link>
-              <Nav.Link href="merch">Merch</Nav.Link>
+              <Nav.Link href="/merch">Merch</Nav.Link>
               <Nav.Link href="#action4">News</Nav.Link>
               <NavDropdown title="Platforms" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="/platforms/nintendo">
