@@ -13,7 +13,6 @@ const DUMMY_DATA = [
     platform: "nintendo",
     url: "https://www.nintendo.com/store/products/pokemon-violet-switch/",
     img: "PKM.jpg",
-    description: "Some Description",
   },
   {
     id: "g2",
@@ -23,7 +22,6 @@ const DUMMY_DATA = [
     platform: "nintendo",
     url: "https://www.nintendo.com/store/products/pokemon-scarlet-switch/",
     img: "Scarlet.jpg",
-    description: "Some Description",
   },
 ];
 

@@ -17,14 +17,20 @@ const GameCards = (props) => {
             <Card
               style={{
                 width: "18rem",
-                background: "transparent",
+                background: "rgba(0, 0, 0, 0.2)",
                 color: "white",
               }}
             >
-              <Card.Img variant="top" src={game.img} />
+              <a href={game.url}>
+                <Card.Img
+                  variant="top"
+                  src={game.img}
+                  style={{ cursor: "pointer" }}
+                />
+              </a>
+
               <Card.Body>
                 <Card.Title>{game.name}</Card.Title>
-                <Card.Text>{game.description}</Card.Text>
               </Card.Body>
               <ListGroup className="list-group-flush">
                 <ListGroup.Item
@@ -44,7 +50,7 @@ const GameCards = (props) => {
                 </ListGroup.Item>
               </ListGroup>
               <Card.Body>
-                <Card.Link href={game.url}>Pre-Purchase</Card.Link>
+                <Card.Link href="#">Link</Card.Link>
                 <Card.Link href="#">Another Link</Card.Link>
               </Card.Body>
             </Card>
