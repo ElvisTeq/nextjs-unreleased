@@ -21,19 +21,21 @@ const Header = () => {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              <Nav.Link href="#action1">About</Nav.Link>
-              <Nav.Link href="#action2">Subscribe</Nav.Link>
-              <Nav.Link href="#action3">Merch</Nav.Link>
+              <Nav.Link href="/about">About</Nav.Link>
+              <Nav.Link href="/subscribe">Subscribe</Nav.Link>
+              <Nav.Link href="merch">Merch</Nav.Link>
               <Nav.Link href="#action4">News</Nav.Link>
               <NavDropdown title="Platforms" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action5">Nintendo</NavDropdown.Item>
-                <NavDropdown.Item href="#action6">PlayStation</NavDropdown.Item>
-                <NavDropdown.Item href="#action7">XBox</NavDropdown.Item>
-                <NavDropdown.Item href="#action8">PC</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action9">
-                  All Platforms
+                <NavDropdown.Item href="/platforms/nintendo">
+                  Nintendo
                 </NavDropdown.Item>
+                <NavDropdown.Item href="/platforms/playstation">
+                  PlayStation
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/platforms/xbox">XBox</NavDropdown.Item>
+                <NavDropdown.Item href="/platforms/pc">PC</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/">All Platforms</NavDropdown.Item>
               </NavDropdown>
             </Nav>
             <Form className="d-flex">
