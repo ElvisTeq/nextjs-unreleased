@@ -1,0 +1,23 @@
+.main {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.align {
+  text-align: center;
+}
+
+@media screen and (max-width: 620px) {
+  .main {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .align {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}

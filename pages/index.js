@@ -1,8 +1,9 @@
 import Head from "next/head";
 import { Fragment } from "react";
-import FeaturedDisplay from "../components/Layout/Body/FeaturedDisplay";
-import GameCards from "../components/Layout/Body/GameCards";
-import styles from "../styles/Home.module.css";
+import FeaturedDisplay from "../components/HomeBody/FeaturedDisplay";
+import GameCards from "../components/HomeBody/GameCards";
+import Title from "../components/HomeBody/Title";
+import classes from "../styles/Home.module.css";
 
 const DUMMY_DATA = [
   {
@@ -28,13 +29,16 @@ const DUMMY_DATA = [
 export default function Home() {
   return (
     <Fragment>
-      <Head>
-        <title>Unreleased</title>
-        <meta name="description" content="Browse Upcoming Games" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <FeaturedDisplay />
-      <GameCards games={DUMMY_DATA} />
+      <div className={classes.main}>
+        <Head>
+          <title>Unreleased</title>
+          <meta name="description" content="Browse Upcoming Games" />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+        <Title />
+        <FeaturedDisplay />
+        <GameCards games={DUMMY_DATA} />
+      </div>
     </Fragment>
   );
 }
