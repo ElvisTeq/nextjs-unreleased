@@ -13,6 +13,7 @@ const DUMMY_DATA = [
     price: 59.99,
     platform: "nintendo",
     url: "https://www.nintendo.com/store/products/pokemon-violet-switch/",
+    urlMore: "https://scarletviolet.pokemon.com/",
     img: "PKM.jpg",
   },
   {
@@ -22,6 +23,7 @@ const DUMMY_DATA = [
     price: 59.99,
     platform: "nintendo",
     url: "https://www.nintendo.com/store/products/pokemon-scarlet-switch/",
+    urlMore: "https://scarletviolet.pokemon.com/",
     img: "Scarlet.jpg",
   },
 ];
@@ -33,7 +35,7 @@ export default function Home() {
         <Head>
           <title>Unreleased</title>
           <meta name="description" content="Browse Upcoming Games" />
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/logo.png" />
         </Head>
         <Title />
         <FeaturedDisplay />

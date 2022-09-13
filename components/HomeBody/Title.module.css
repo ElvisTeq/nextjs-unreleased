@@ -1,5 +1,6 @@
 .main {
   width: 100%;
+  text-align: center;
 }
 
 .img {
@@ -15,15 +16,32 @@
 }
 
 .title {
-  margin: 0 auto;
-  text-align: center;
-  width: 50%;
+  position: absolute;
+  left: 50%;
+  margin-top: 85px;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: bold;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+  pointer-events: none;
 }
 
-.sectitle {
-  margin: 0 auto;
-  text-align: center;
-  width: 50%;
+@-webkit-keyframes glow {
+  from {
+    color: #fff;
+    text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2,
+      0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2,
+      0 0 90px #00fff2;
+  }
+
+  to {
+    color: gray;
+    text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2,
+      0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2,
+      0 1 90px #00fff2;
+  }
 }
 
 @media only screen and (max-width: 900px) and (min-width: 401px) {
@@ -39,10 +57,6 @@
   .title {
     font-size: 30px;
   }
-
-  .sectitle {
-    font-size: 30px;
-  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -52,9 +66,10 @@
 
   .title {
     font-size: 17px;
-  }
-
-  .sectitle {
-    font-size: 17px;
+    object-fit: cover;
+    width: 350px;
+    position: static;
+    margin-top: 0px;
+    transform: translate(0%, 300%);
   }
 }

@@ -66,8 +66,16 @@ const GameCards = (props) => {
                 </ListGroup.Item>
               </ListGroup>
               <Card.Body>
-                <Card.Link href="#">Link</Card.Link>
-                <Card.Link href="#">Another Link</Card.Link>
+                <Card.Link href="#" rel="noopener noreferrer" target="_blank">
+                  Store
+                </Card.Link>
+                <Card.Link
+                  href={game.urlMore}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  More
+                </Card.Link>
               </Card.Body>
             </Card>
           </div>

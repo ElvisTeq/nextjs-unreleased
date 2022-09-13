@@ -24,9 +24,7 @@ const Header = () => {
                 style={{ maxHeight: "100px" }}
                 navbarScroll
               >
-                <Nav.Link href="/subscribe">Subscribe</Nav.Link>
-                <Nav.Link href="/merch">Merch</Nav.Link>
-                <Nav.Link href="#action4">News</Nav.Link>
+                {" "}
                 <NavDropdown title="Platforms" id="navbarScrollingDropdown">
                   <NavDropdown.Item href="/platforms/nintendo">
                     Nintendo
@@ -41,6 +39,9 @@ const Header = () => {
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="/">All Platforms</NavDropdown.Item>
                 </NavDropdown>
+                <Nav.Link href="/subscribe">Subscribe</Nav.Link>
+                <Nav.Link href="/merch">Merch</Nav.Link>
+                <Nav.Link href="#action4">News</Nav.Link>
               </Nav>
               <Form className="d-flex">
                 <Form.Control
