@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import classes from "./Title.module.css";
+import classes from "./BodyTitle.module.css";
 
 const Title = () => {
   return (
