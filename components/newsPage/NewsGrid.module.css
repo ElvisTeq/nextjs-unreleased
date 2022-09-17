@@ -2,43 +2,96 @@
   padding: 0 35px;
 }
 
+.p {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-decoration-line: none;
+  position: absolute;
+  transform: translate(13%, 40%);
+
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 70%
+  );
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+}
+
+.p:hover {
+  text-decoration-line: none;
+}
+
 .grid {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 50rem;
   gap: 15px;
-  margin-top: 15px;
-  grid-template-columns: 2fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid > * {
+  flex: 1 1 33%;
 }
 
 .link1 {
-  background: url(../../public/free-games.jpg) no-repeat center;
-  background-size: auto;
+  background: url(../../public/free-game.jpg) no-repeat center;
+  background-size: 800px auto;
   height: 10rem;
   text-align: center;
   max-width: 50rem;
   display: block;
-  width: auto;
   margin-left: auto;
   margin-right: auto;
   border-radius: 30px;
   margin-top: 40px;
+  margin-bottom: 15px;
+  box-shadow: inset 0px 60px 15px 0px rgba(0, 0, 0, 0.6);
+  transition: 0.5s ease;
 }
 
 .link2 {
-  background: url(../../public/free-games.jpg) no-repeat center;
-  background-size: auto;
+  background: url(../../public/twitch-news.jpg) no-repeat center;
+  background-size: 465px auto;
   height: 10rem;
   text-align: center;
-  max-width: 500px;
+  max-width: 30rem;
   border-radius: 30px;
+  box-shadow: inset 0px 60px 15px 0px rgba(0, 0, 0, 0.6);
+  transition: 0.5s ease;
 }
 
 .link3 {
-  background: url(../../public/free-games.jpg) no-repeat center;
-  background-size: auto;
+  background: url(../../public/nintendo-news.jpg) no-repeat center;
+  background-size: 350px auto;
   height: 10rem;
   text-align: center;
-  max-width: 250px;
+  max-width: 20rem;
   border-radius: 30px;
+  box-shadow: inset 0px 60px 15px 0px rgba(0, 0, 0, 0.6);
+  transition: 0.5s ease;
+}
+
+.link1:hover,
+.link2:hover,
+.link3:hover {
+  text-decoration: none;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -52,5 +105,12 @@
 
   .link3 {
     height: 5rem;
+  }
+
+  .p {
+    font-size: 15px;
+    object-fit: cover;
+    width: 350px;
+    transform: translate(-13%, 50%);
   }
 }
