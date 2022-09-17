@@ -1,18 +1,20 @@
 .main {
   width: 100%;
   text-align: center;
+  padding: 0 8%;
 }
 
 .img {
   background-color: rgba(0, 0, 0, 0.2);
   background: url(../../public/Screen.png) no-repeat;
   background-size: auto;
-  height: 35rem;
+  height: 34rem;
   text-align: center;
   max-width: 100%;
   display: block;
   padding: 0 1em;
   width: auto;
+  border-radius: 10% / 50%;
 }
 
 .title {
@@ -26,6 +28,7 @@
   -moz-animation: glow 2s ease-in-out infinite alternate;
   animation: glow 2s ease-in-out infinite alternate;
   pointer-events: none;
+  text-transform: uppercase;
 }
 
 @-webkit-keyframes glow {
@@ -44,7 +47,7 @@
   }
 }
 
-@media only screen and (max-width: 900px) and (min-width: 401px) {
+@media only screen and (max-width: 1100px) and (min-width: 401px) {
   .main {
     padding: 0px;
     height: 25rem;
@@ -70,6 +73,6 @@
     width: 350px;
     position: static;
     margin-top: 0px;
-    transform: translate(0%, 300%);
+    transform: translate(-13%, 300%);
   }
 }

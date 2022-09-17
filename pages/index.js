@@ -1,8 +1,8 @@
 import Head from "next/head";
 import { Fragment } from "react";
-import FeaturedDisplay from "../components/body/FeaturedDisplay";
-import GameCards from "../components/body/GameCards";
-import Title from "../components/body/BodyTitle";
+import FeaturedDisplay from "../components/mainPage/FeaturedDisplay";
+import GameCards from "../components/mainPage/GameCards";
+import Title from "../components/mainPage/BodyTitle";
 import classes from "../styles/Home.module.css";
 
 const DUMMY_DATA = [

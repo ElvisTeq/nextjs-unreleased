@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { Fragment } from "react";
 import classes from "./news.module.css";
-import Title from "../../components/body/BodyTitle";
+import NewsTitle from "../../components/newsPage/NewsTitle";
+import NewsGrid from "../../components/newsPage/NewsGrid";
 
 const DUMMY_NEWS = {
   title:
@@ -29,12 +30,8 @@ const data = DUMMY_NEWS;
 const News = () => {
   return (
     <Fragment>
-      <Title />
-      <div className={classes.main}>
-        <div className={classes.grid}>
-          <a href={data.link} className={classes.image}></a>
-        </div>
-      </div>
+      <NewsTitle />
+      <NewsGrid data={data} />
     </Fragment>
   );
 };

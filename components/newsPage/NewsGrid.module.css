@@ -1,0 +1,56 @@
+.main {
+  padding: 0 35px;
+}
+
+.grid {
+  display: grid;
+  gap: 15px;
+  margin-top: 15px;
+  grid-template-columns: 2fr 1fr;
+}
+
+.link1 {
+  background: url(../../public/free-games.jpg) no-repeat center;
+  background-size: auto;
+  height: 10rem;
+  text-align: center;
+  max-width: 50rem;
+  display: block;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  margin-top: 40px;
+}
+
+.link2 {
+  background: url(../../public/free-games.jpg) no-repeat center;
+  background-size: auto;
+  height: 10rem;
+  text-align: center;
+  max-width: 500px;
+  border-radius: 30px;
+}
+
+.link3 {
+  background: url(../../public/free-games.jpg) no-repeat center;
+  background-size: auto;
+  height: 10rem;
+  text-align: center;
+  max-width: 250px;
+  border-radius: 30px;
+}
+
+@media only screen and (max-width: 400px) {
+  .link1 {
+    height: 5rem;
+  }
+
+  .link2 {
+    height: 5rem;
+  }
+
+  .link3 {
+    height: 5rem;
+  }
+}
