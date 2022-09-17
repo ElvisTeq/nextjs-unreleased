@@ -94,7 +94,7 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .link1 {
     height: 5rem;
   }
@@ -110,7 +110,7 @@
   .p {
     font-size: 15px;
     object-fit: cover;
-    width: 350px;
-    transform: translate(-13%, 50%);
+    width: 100px;
+    transform: translate(15%, 15%);
   }
 }
