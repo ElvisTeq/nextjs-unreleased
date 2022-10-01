@@ -238,6 +238,16 @@
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .main {
+    height: 12rem;
+  }
+
+  .img {
+    height: 12rem;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   .main {
     height: 10rem;
