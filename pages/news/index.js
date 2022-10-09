@@ -4,6 +4,7 @@ import { Fragment } from "react";
 import classes from "./news.module.css";
 import NewsTitle from "../../components/newsPage/NewsTitle";
 import NewsGrid from "../../components/newsPage/NewsGrid";
+import NewsList from "../../components/newsPage/NewsList";
 
 const DUMMY_NEWS = {
   title:
@@ -32,6 +33,7 @@ const News = () => {
     <Fragment>
       <NewsTitle />
       <NewsGrid data={data} />
+      <NewsList data={data} />
     </Fragment>
   );
 };
