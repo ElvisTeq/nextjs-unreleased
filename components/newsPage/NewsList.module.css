@@ -11,6 +11,12 @@
   border-radius: 30px;
 }
 
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 40% 60%;
+}
+
 .title {
 }
 
@@ -21,7 +27,7 @@
 }
 
 .image {
-  height: 20rem;
+  height: 18rem;
   width: 30rem;
 }
 
