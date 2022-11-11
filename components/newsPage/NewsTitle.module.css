@@ -217,11 +217,11 @@
 @media only screen and (max-width: 1100px) and (min-width: 401px) {
   .main {
     padding: 0px;
-    height: 25rem;
+    height: 15rem;
   }
 
   .img {
-    height: 25rem;
+    height: 15rem;
   }
 
   .title {
@@ -231,31 +231,36 @@
 
 @media only screen and (max-width: 700px) {
   .main {
-    height: 18rem;
+    height: 9rem;
   }
 
   .img {
-    height: 18rem;
+    height: 10rem;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .main {
-    height: 12rem;
+    height: 6rem;
   }
 
   .img {
-    height: 12rem;
+    height: 8rem;
+  }
+
+  .title {
+    font-size: 20px;
+    transform: translate(-50%, -60%);
   }
 }
 
 @media only screen and (max-width: 400px) {
   .main {
-    height: 10rem;
+    height: 4rem;
   }
 
   .img {
-    height: 10rem;
+    height: 6rem;
   }
 
   .title {
