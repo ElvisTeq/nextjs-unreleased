@@ -3,13 +3,15 @@
   text-align: center left;
   align-self: center;
   margin-top: 30px;
-  background-color: transparent;
+  background-color: rgb(17, 13, 31);
   padding: 0.5% 0.5%;
   max-width: 75rem;
   margin-left: auto;
   margin-right: auto;
   border-radius: 30px;
-  border: 5px solid rgb(0, 0, 0);
+  box-shadow: rgb(45, 60, 77) 0px 20px 70px -10px;
+  transition: 0.5s ease;
+  font-family: sans-serif;
 }
 
 .grid {
@@ -17,11 +19,9 @@
   gap: 1rem;
   grid-template-columns: 40% 60%;
   grid-template-rows: 30% 50% 20%;
-  padding: 0.5% 0.5%;
 }
 
 .title {
-  padding: 1% 1%;
 }
 
 .date {
@@ -32,7 +32,6 @@
 }
 
 .description {
-  padding: 1% 1%;
 }
 
 .image {
@@ -41,7 +40,26 @@
   padding: 1% 1%;
   grid-row: span 3;
   transform: translate(0%, 2%);
+  border-radius: 20px;
 }
 
 .link {
+}
+
+.main:hover {
+  text-decoration: none;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
 }
