@@ -7,10 +7,14 @@ import classes from "./GameCards.module.css";
 
 const GameCards = (props) => {
   // Getting games data
-  const games = [];
-  Object.keys(props).forEach(function (prop) {
-    games.push(...props[prop]);
-  });
+  const games = props.games;
+
+  // const games = [];
+  // Object.keys(props).forEach(function (prop) {
+  //   games.push(...props[prop]);
+  // });
+
+  console.log(games);
 
   // Uppercasing games names/dates
   const toUpperCase = (str) => {
