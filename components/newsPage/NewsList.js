@@ -14,9 +14,9 @@ const NewsList = (props) => {
   return (
     <Fragment>
       {data.map((news) => (
-        <div className={classes.main}>
+        <div key={news.id} className={classes.main}>
           <div className={classes.grid}>
-            <img src={data.image} className={classes.image}></img>
+            <img src={news.image} className={classes.image}></img>
             <h2 className={classes.title}>{news.title}</h2>
             <p className={classes.date}>{news.date}</p>
             <p className={classes.description}>{news.description}</p>

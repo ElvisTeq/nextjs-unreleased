@@ -8,6 +8,7 @@ import NewsList from "../../components/newsPage/NewsList";
 
 const DUMMY_NEWS = [
   {
+    id: 0,
     title:
       "Here is another look at God of War Ragnarök, as accompanying controller revealed",
     date: "Tue, 13 Sep 2022 22:48:32 +0000",
@@ -19,6 +20,7 @@ const DUMMY_NEWS = [
   },
 
   {
+    id: 1,
     title: "God Of War Ragnarok DualSense Revealed",
     date: "Tue, 13 Sep 2022 22:44:05 GMT",
     description: "Get ready for Ragnarok with this special edition DualSense.",
